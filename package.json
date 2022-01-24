@@ -8,7 +8,8 @@
         "postbuild": "cp README.md dist/ngx-splide/",
         "test": "ng test",
         "lint": "ng lint",
-        "e2e": "ng e2e"
+        "e2e": "ng e2e",
+        "postinstall": "cd ./node_modules/ngx-splide && npm install && npm run build"
     },
     "private": true,
     "dependencies": {
