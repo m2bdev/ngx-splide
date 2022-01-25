@@ -1,0 +1,35 @@
+{
+  "name": "ngx-splide",
+  "version": "0.0.15",
+  "description": "Splide.js integration with angular",
+  "keywords": [
+    "Splide",
+    "Splide.js",
+    "slider",
+    "carousel"
+  ],
+  "author": "wiistriker",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JustCommunication-ru/ngx-splide"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
+  "peerDependencies": {
+    "@splidejs/splide": "^3.6.11",
+    "@angular/common": "*",
+    "@angular/core": "*"
+  },
+  "main": "bundles/ngx-splide.umd.js",
+  "module": "fesm2015/ngx-splide.js",
+  "es2015": "fesm2015/ngx-splide.js",
+  "esm2015": "esm2015/ngx-splide.js",
+  "fesm2015": "fesm2015/ngx-splide.js",
+  "typings": "ngx-splide.d.ts",
+  "sideEffects": false,
+  "scripts": {
+    "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by Ivy in full compilation mode. This is not allowed.\\nPlease delete and rebuild the package with Ivy partial compilation mode, before attempting to publish.\\n')\" && exit 1"
+  }
+}

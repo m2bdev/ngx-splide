@@ -1,0 +1,7 @@
+/*
+ * Public API Surface of ngx-splide
+ */
+export * from './lib/ngx-splide-slide.component';
+export * from './lib/ngx-splide.component';
+export * from './lib/ngx-splide.module';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicHVibGljLWFwaS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uL3Byb2plY3RzL25neC1zcGxpZGUvc3JjL3B1YmxpYy1hcGkudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O0dBRUc7QUFFSCxjQUFjLGtDQUFrQyxDQUFDO0FBQ2pELGNBQWMsNEJBQTRCLENBQUM7QUFDM0MsY0FBYyx5QkFBeUIsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbIi8qXHJcbiAqIFB1YmxpYyBBUEkgU3VyZmFjZSBvZiBuZ3gtc3BsaWRlXHJcbiAqL1xyXG5cclxuZXhwb3J0ICogZnJvbSAnLi9saWIvbmd4LXNwbGlkZS1zbGlkZS5jb21wb25lbnQnO1xyXG5leHBvcnQgKiBmcm9tICcuL2xpYi9uZ3gtc3BsaWRlLmNvbXBvbmVudCc7XHJcbmV4cG9ydCAqIGZyb20gJy4vbGliL25neC1zcGxpZGUubW9kdWxlJztcclxuIl19
