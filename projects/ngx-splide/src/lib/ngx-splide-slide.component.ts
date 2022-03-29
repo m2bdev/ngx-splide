@@ -1,4 +1,4 @@
-import {Component, TemplateRef, ViewChild} from "@angular/core";
+import {Component, Input, TemplateRef, ViewChild} from "@angular/core";
 
 @Component({
     selector: 'splide-slide',
@@ -6,6 +6,8 @@ import {Component, TemplateRef, ViewChild} from "@angular/core";
 })
 export class NgxSplideSlideComponent
 {
+    @Input()
+    public class: string;
     @ViewChild('slideContent')
     public slideContent: TemplateRef<any>;
 }

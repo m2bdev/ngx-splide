@@ -1,9 +1,9 @@
 <div #splideElement class="splide" [ngClass]="containerClass">
     <div class="splide__track">
-        <div class="splide__list">
-            <div class="splide__slide" *ngFor="let slide of slides;">
+        <ul class="splide__list">
+            <li class="splide__slide" *ngFor="let slide of slides;" [class]="slide.class">
                 <ng-template *ngIf="slide.slideContent" [ngTemplateOutlet]="slide.slideContent"></ng-template>
-            </div>
-        </div>
+            </li>
+        </ul>
     </div>
 </div>
