@@ -1,5 +1,5 @@
 import * as i0 from '@angular/core';
-import { Component, ViewChild, EventEmitter, PLATFORM_ID, ChangeDetectionStrategy, Inject, Input, Output, ContentChildren, NgModule } from '@angular/core';
+import { Component, Input, ViewChild, EventEmitter, PLATFORM_ID, ChangeDetectionStrategy, Inject, Output, ContentChildren, NgModule } from '@angular/core';
 import * as i1 from '@angular/common';
 import { isPlatformBrowser, CommonModule } from '@angular/common';
 
@@ -16,7 +16,7 @@ NgxSplideSlideComponent.ɵcmp = /*@__PURE__*/ i0.ɵɵdefineComponent({ type: Ngx
     } if (rf & 2) {
         let _t;
         i0.ɵɵqueryRefresh(_t = i0.ɵɵloadQuery()) && (ctx.slideContent = _t.first);
-    } }, ngContentSelectors: _c1, decls: 2, vars: 0, consts: [["slideContent", ""]], template: function NgxSplideSlideComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, inputs: { class: "class" }, ngContentSelectors: _c1, decls: 2, vars: 0, consts: [["slideContent", ""]], template: function NgxSplideSlideComponent_Template(rf, ctx) { if (rf & 1) {
         i0.ɵɵprojectionDef();
         i0.ɵɵtemplate(0, NgxSplideSlideComponent_ng_template_0_Template, 1, 0, "ng-template", null, 0, i0.ɵɵtemplateRefExtractor);
     } }, encapsulation: 2 });
@@ -26,25 +26,28 @@ NgxSplideSlideComponent.ɵcmp = /*@__PURE__*/ i0.ɵɵdefineComponent({ type: Ngx
                 selector: 'splide-slide',
                 template: '<ng-template #slideContent><ng-content></ng-content></ng-template>'
             }]
-    }], null, { slideContent: [{
+    }], null, { class: [{
+            type: Input
+        }], slideContent: [{
             type: ViewChild,
             args: ['slideContent']
         }] }); })();
 
 const _c0 = ["splideElement"];
-function NgxSplideComponent_div_4_1_ng_template_0_Template(rf, ctx) { }
-function NgxSplideComponent_div_4_1_Template(rf, ctx) { if (rf & 1) {
-    i0.ɵɵtemplate(0, NgxSplideComponent_div_4_1_ng_template_0_Template, 0, 0, "ng-template", 7);
+function NgxSplideComponent_li_4_1_ng_template_0_Template(rf, ctx) { }
+function NgxSplideComponent_li_4_1_Template(rf, ctx) { if (rf & 1) {
+    i0.ɵɵtemplate(0, NgxSplideComponent_li_4_1_ng_template_0_Template, 0, 0, "ng-template", 7);
 } if (rf & 2) {
     const slide_r2 = i0.ɵɵnextContext().$implicit;
     i0.ɵɵproperty("ngTemplateOutlet", slide_r2.slideContent);
 } }
-function NgxSplideComponent_div_4_Template(rf, ctx) { if (rf & 1) {
-    i0.ɵɵelementStart(0, "div", 5);
-    i0.ɵɵtemplate(1, NgxSplideComponent_div_4_1_Template, 1, 1, undefined, 6);
+function NgxSplideComponent_li_4_Template(rf, ctx) { if (rf & 1) {
+    i0.ɵɵelementStart(0, "li", 5);
+    i0.ɵɵtemplate(1, NgxSplideComponent_li_4_1_Template, 1, 1, undefined, 6);
     i0.ɵɵelementEnd();
 } if (rf & 2) {
     const slide_r2 = ctx.$implicit;
+    i0.ɵɵclassMap(slide_r2.class);
     i0.ɵɵadvance(1);
     i0.ɵɵproperty("ngIf", slide_r2.slideContent);
 } }
@@ -277,11 +280,11 @@ NgxSplideComponent.ɵcmp = /*@__PURE__*/ i0.ɵɵdefineComponent({ type: NgxSplid
     } if (rf & 2) {
         let _t;
         i0.ɵɵqueryRefresh(_t = i0.ɵɵloadQuery()) && (ctx.splideElement = _t.first);
-    } }, inputs: { selectedSlideIndex: "selectedSlideIndex", options: "options", containerClass: "containerClass", syncWith: "syncWith" }, outputs: { selectedSlideIndexChange: "selectedSlideIndexChange", onInit: "onInit", onSplideEvent: "onSplideEvent", onMounted: "onMounted", onUpdated: "onUpdated", onMove: "onMove", onMoved: "onMoved", onDrag: "onDrag", onDragged: "onDragged", onVisible: "onVisible", onHidden: "onHidden", onActive: "onActive", onInactive: "onInactive", onClick: "onClick", onArrowsMounted: "onArrowsMounted", onArrowsUpdated: "onArrowsUpdated", onPaginationMounted: "onPaginationMounted", onPaginationUpdated: "onPaginationUpdated", onNavigationMounted: "onNavigationMounted", onAutoplayPlay: "onAutoplayPlay", onAutoplayPause: "onAutoplayPause", onAutoplayPlaying: "onAutoplayPlaying", onLazyloadLoaded: "onLazyloadLoaded" }, features: [i0.ɵɵNgOnChangesFeature], decls: 5, vars: 2, consts: [[1, "splide", 3, "ngClass"], ["splideElement", ""], [1, "splide__track"], [1, "splide__list"], ["class", "splide__slide", 4, "ngFor", "ngForOf"], [1, "splide__slide"], [4, "ngIf"], [3, "ngTemplateOutlet"]], template: function NgxSplideComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, inputs: { selectedSlideIndex: "selectedSlideIndex", options: "options", containerClass: "containerClass", syncWith: "syncWith" }, outputs: { selectedSlideIndexChange: "selectedSlideIndexChange", onInit: "onInit", onSplideEvent: "onSplideEvent", onMounted: "onMounted", onUpdated: "onUpdated", onMove: "onMove", onMoved: "onMoved", onDrag: "onDrag", onDragged: "onDragged", onVisible: "onVisible", onHidden: "onHidden", onActive: "onActive", onInactive: "onInactive", onClick: "onClick", onArrowsMounted: "onArrowsMounted", onArrowsUpdated: "onArrowsUpdated", onPaginationMounted: "onPaginationMounted", onPaginationUpdated: "onPaginationUpdated", onNavigationMounted: "onNavigationMounted", onAutoplayPlay: "onAutoplayPlay", onAutoplayPause: "onAutoplayPause", onAutoplayPlaying: "onAutoplayPlaying", onLazyloadLoaded: "onLazyloadLoaded" }, features: [i0.ɵɵNgOnChangesFeature], decls: 5, vars: 2, consts: [[1, "splide", 3, "ngClass"], ["splideElement", ""], [1, "splide__track"], [1, "splide__list"], ["class", "splide__slide", 3, "class", 4, "ngFor", "ngForOf"], [1, "splide__slide"], [4, "ngIf"], [3, "ngTemplateOutlet"]], template: function NgxSplideComponent_Template(rf, ctx) { if (rf & 1) {
         i0.ɵɵelementStart(0, "div", 0, 1);
         i0.ɵɵelementStart(2, "div", 2);
-        i0.ɵɵelementStart(3, "div", 3);
-        i0.ɵɵtemplate(4, NgxSplideComponent_div_4_Template, 2, 1, "div", 4);
+        i0.ɵɵelementStart(3, "ul", 3);
+        i0.ɵɵtemplate(4, NgxSplideComponent_li_4_Template, 2, 3, "li", 4);
         i0.ɵɵelementEnd();
         i0.ɵɵelementEnd();
         i0.ɵɵelementEnd();
