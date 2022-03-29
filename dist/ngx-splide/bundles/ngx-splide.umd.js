@@ -57,7 +57,8 @@
                 type: i0.Component,
                 args: [{
                         selector: 'splide-slide',
-                        template: '<ng-template #slideContent><ng-content></ng-content></ng-template>'
+                        template: '<ng-template #slideContent><ng-content></ng-content></ng-template>',
+                        encapsulation: i0.ViewEncapsulation.None
                     }]
             }], null, { class: [{
                     type: i0.Input

@@ -1,5 +1,5 @@
 import * as i0 from '@angular/core';
-import { Component, Input, ViewChild, EventEmitter, PLATFORM_ID, ChangeDetectionStrategy, Inject, Output, ContentChildren, NgModule } from '@angular/core';
+import { Component, ViewEncapsulation, Input, ViewChild, EventEmitter, PLATFORM_ID, ChangeDetectionStrategy, Inject, Output, ContentChildren, NgModule } from '@angular/core';
 import * as i1 from '@angular/common';
 import { isPlatformBrowser, CommonModule } from '@angular/common';
 
@@ -24,7 +24,8 @@ NgxSplideSlideComponent.ɵcmp = /*@__PURE__*/ i0.ɵɵdefineComponent({ type: Ngx
         type: Component,
         args: [{
                 selector: 'splide-slide',
-                template: '<ng-template #slideContent><ng-content></ng-content></ng-template>'
+                template: '<ng-template #slideContent><ng-content></ng-content></ng-template>',
+                encapsulation: ViewEncapsulation.None
             }]
     }], null, { class: [{
             type: Input
