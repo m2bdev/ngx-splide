@@ -1,6 +1,6 @@
 {
     "name": "ngx-splide",
-    "version": "0.0.15",
+    "version": "0.0.16",
     "description": "Splide.js integration with angular",
     "keywords": [
         "Splide",
@@ -18,7 +18,7 @@
         "tslib": "^2.0.0"
     },
     "peerDependencies": {
-        "@splidejs/splide": "^3.6.11",
+        "@splidejs/splide": "^3.6.12",
         "@angular/common": "*",
         "@angular/core": "*"
     }
