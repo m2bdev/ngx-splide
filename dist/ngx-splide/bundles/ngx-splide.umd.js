@@ -69,20 +69,20 @@
     })();
 
     var _c0 = ["splideElement"];
-    function NgxSplideComponent_li_4_1_ng_template_0_Template(rf, ctx) { }
-    function NgxSplideComponent_li_4_1_Template(rf, ctx) {
+    function NgxSplideComponent_div_4_1_ng_template_0_Template(rf, ctx) { }
+    function NgxSplideComponent_div_4_1_Template(rf, ctx) {
         if (rf & 1) {
-            i0__namespace.ɵɵtemplate(0, NgxSplideComponent_li_4_1_ng_template_0_Template, 0, 0, "ng-template", 7);
+            i0__namespace.ɵɵtemplate(0, NgxSplideComponent_div_4_1_ng_template_0_Template, 0, 0, "ng-template", 7);
         }
         if (rf & 2) {
             var slide_r2 = i0__namespace.ɵɵnextContext().$implicit;
             i0__namespace.ɵɵproperty("ngTemplateOutlet", slide_r2.slideContent);
         }
     }
-    function NgxSplideComponent_li_4_Template(rf, ctx) {
+    function NgxSplideComponent_div_4_Template(rf, ctx) {
         if (rf & 1) {
-            i0__namespace.ɵɵelementStart(0, "li", 5);
-            i0__namespace.ɵɵtemplate(1, NgxSplideComponent_li_4_1_Template, 1, 1, undefined, 6);
+            i0__namespace.ɵɵelementStart(0, "div", 5);
+            i0__namespace.ɵɵtemplate(1, NgxSplideComponent_div_4_1_Template, 1, 1, undefined, 6);
             i0__namespace.ɵɵelementEnd();
         }
         if (rf & 2) {
@@ -410,8 +410,8 @@
             if (rf & 1) {
                 i0__namespace.ɵɵelementStart(0, "div", 0, 1);
                 i0__namespace.ɵɵelementStart(2, "div", 2);
-                i0__namespace.ɵɵelementStart(3, "ul", 3);
-                i0__namespace.ɵɵtemplate(4, NgxSplideComponent_li_4_Template, 2, 3, "li", 4);
+                i0__namespace.ɵɵelementStart(3, "div", 3);
+                i0__namespace.ɵɵtemplate(4, NgxSplideComponent_div_4_Template, 2, 3, "div", 4);
                 i0__namespace.ɵɵelementEnd();
                 i0__namespace.ɵɵelementEnd();
                 i0__namespace.ɵɵelementEnd();
